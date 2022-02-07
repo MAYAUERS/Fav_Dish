@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FavDish</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add_dish">Add Dish</string>
+
+
+    <string name="lbl_add_dish">ADD DISH</string>
+    <string name="image_contentDescription">image</string>
+    <string name="lbl_category">Categoory</string>
+    <string name="lbl_ingredients">Ingredients</string>
+    <string name="cooking_time_in_min">Cooking Time In Minutes</string>
+    <string name="direction_to_cook">Direction To Cook</string>
+
+    <string name="dish_type">Type</string>
+    <string name="dish_title">Title</string>
+    <string name="select_image">Select Image Action</string>
+    <string name="lbl_camera">Camera</string>
+    <string name="lbk_gallery">Gallery</string>
+
+    <string name="dishesh_not_added">Dishes not Added yet</string>
+    <string name="select_dish_type">Select Dish Type </string>
+    <string name="select_dish_category">Select Dish Category</string>
+    <string name="select_dish_cooking_time">Select Dish Cooking Time</string>
+
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+   <!-- <include layout="@layout/toolbar"/>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_update_dish"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_select_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp">
+
+                <ImageView
+                    android:id="@+id/iv_dish_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/ivAddDishImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_baseline_photo_camera_24" />
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_title_add_dish"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_below="@+id/fl_select_image">
+
+                <EditText
+                    android:id="@+id/et_titel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/dish_title"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    ></EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_type_add_dish"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_below="@+id/ti_title_add_dish">
+
+                <EditText
+                    android:id="@+id/et_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/dish_type"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"></EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_category_add_dish"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_below="@+id/ti_type_add_dish">
+
+                <EditText
+                    android:id="@+id/et_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/lbl_category"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"></EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ingredients_add_dish"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_below="@+id/ti_category_add_dish">
+
+                <EditText
+                    android:maxLines="5"
+                    android:id="@+id/et_ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    android:minLines="2"
+                    android:maxLength="5"
+                    android:hint="@string/lbl_ingredients"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"></EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_cooking_add_dish"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_below="@+id/ti_ingredients_add_dish">
+
+                <EditText
+                    android:id="@+id/et_cooking_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/cooking_time_in_min"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"></EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_cooking_direction_add_dish"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_below="@+id/ti_cooking_add_dish">
+
+                <EditText
+                    android:id="@+id/et_Cooking_direction"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/direction_to_cook"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"></EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_add_dish"
+                android:background="@color/primary_light_color"
+                android:text="Add Dish"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
